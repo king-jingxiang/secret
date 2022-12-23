@@ -1,0 +1,347 @@
+Host tiaoban
+    #HostName 112.31.12.178
+    HostName 36.7.159.237
+    Port 2222
+    User fchang
+Host CK007
+    HostName 10.12.3.7
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host GA003
+    HostName 10.10.2.3
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host GA041
+    HostName 10.11.2.41
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host ga044
+    HostName 10.10.2.44
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host CK002
+    HostName 10.10.2.2
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host CK009
+    HostName 10.12.3.9
+    Port 22
+    User root
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host CK010
+    HostName 10.12.3.10
+    Port 22
+    User root
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host CK011
+    HostName 10.12.3.11
+    Port 22
+    User root
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host CK012
+    HostName 10.12.3.12
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dev12
+    HostName 10.12.4.12
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dev13
+    HostName 10.12.4.13
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dev14
+    HostName 10.12.4.14
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dev15
+    HostName 10.12.4.15
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host pai01
+    HostName 10.10.8.5
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host pai02
+    HostName 10.10.8.6
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host pai
+    HostName 10.10.8.42
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host pai1
+    HostName 10.10.8.4
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dev5
+    HostName 10.11.3.5
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host pai2
+    HostName 10.10.8.1
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host pai3
+    HostName 10.10.1.1
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host jx
+    HostName 10.10.8.35
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host jx02
+    HostName 10.10.8.8
+    Port 22
+    User root
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host prod10
+    HostName 10.10.1.1
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host amax
+    HostName 192.168.136.44
+    Port 22
+    User amax
+Host paiprod
+    HostName 10.11.3.2
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host rdma
+    HostName 192.168.203.24
+    Port 22
+    User root
+Host dev40
+    HostName 10.11.2.40
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dev41
+    HostName 10.11.2.41
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host ga002
+    HostName 10.11.2.2
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host ramax
+    Hostname 49.235.185.251
+    Port 6000
+    user amax
+Host mlu100
+    Hostname 192.168.204.152
+    user pcsys02
+Host mlu270_tf
+    Hostname 61.185.199.178
+    Port 32154
+    User root
+Host mlu270_pytorch
+    Hostname 61.185.199.178
+    Port 30215
+    User root
+Host tokyo
+    Hostname 3.115.164.213
+    Port 22
+    User ubuntu
+Host MLU_28
+    HostName 61.185.199.178
+    Port 38000
+    User root
+    ProxyCommand ssh -W %h:%p tiaoban
+Host MLU_35
+    HostName 10.1.6.35
+    Port 22
+    User root
+    ProxyCommand ssh MLU_28 -W %h:%p
+Host MLU_25
+    HostName 10.1.4.25
+    Port 22
+    User root
+    ProxyCommand ssh MLU_20 -W %h:%p
+Host MLU_34
+    HostName 10.1.6.34
+    Port 22
+    User root
+    ProxyCommand ssh MLU_28 -W %h:%p
+Host node1
+    HostName 192.168.38.128
+    Port 22
+    User root
+    ProxyCommand ssh amax -W %h:%p
+Host tf-debug
+    HostName 192.168.113.39
+    Port 30022
+    User root
+    User root
+Host hwtiaoban
+    HostName 218.17.180.46
+    Port 17891
+    User cf07240002
+Host hw01
+    HostName 168.170.13.65
+    Port 22
+    User hw
+    ProxyCommand ssh hwtiaoban -W %h:%p
+Host hw02
+    HostName 168.170.13.66
+    Port 22
+    User hw
+    ProxyCommand ssh hwtiaoban -W %h:%p
+Host atlas
+    HostName 192.168.8.122
+    Port 22
+    User root
+Host atlas_remote
+    HostName 210.45.123.248
+    Port 65409
+    User root
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host MLU_20
+    HostName 10.1.6.20
+    Port 22
+    User root
+    ProxyCommand ssh MLU_28 -W %h:%p
+Host NAS
+    HostName 10.11.0.10
+    Port 10022
+    User admin
+    ProxyCommand ssh jingxiang -W %h:%p
+Host openwrt
+    HostName 10.11.0.2
+    Port 22
+    User root
+    ProxyCommand ssh jingxiang -W %h:%p
+Host NAS_remote
+    HostName 210.45.123.248
+    Port 10022
+    User admin
+Host jingxiang
+    HostName jingxiang.tpddns.cn
+    Port 30022
+    User jingxiang
+Host jingxiang02
+    HostName 192.168.250.214
+    Port 22
+    User jingxiang
+Host GA003
+    HostName 10.11.2.3
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host proxy
+   HostName 10.10.8.8
+   Port 22
+   User root
+   ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host enflame
+   HostName 192.168.8.81
+   Port 22
+   User leinao
+Host prod18
+    HostName 10.11.3.18
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host prod8.1
+    HostName 10.10.8.1
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host vm-edge
+    HostName 10.10.8.15
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host toybrick
+    HostName 192.168.8.199
+    Port 22
+    User toybrick
+Host esxi
+    HostName 10.11.0.4
+    Port 22
+    User root
+    # ProxyCommand ssh jingxiang -W %h:%p
+Host vmi-node01
+    HostName 192.168.124.28
+    Port 22
+    User ubuntu
+    ProxyCommand ssh CK007 -W %h:%p
+Host vmi-node02
+    HostName 192.168.124.33
+    Port 22
+    User ubuntu
+    ProxyCommand ssh CK007 -W %h:%p
+Host vm
+    HostName 10.10.2.235
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host pai008
+    HostName 10.11.5.8
+    Port 22
+    User leinao
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dby41
+    HostName 10.10.8.41
+    Port 22
+    User root
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dby43
+    HostName 10.10.8.43
+    Port 22
+    User root
+    ProxyCommand ssh fchang@tiaoban -W %h:%p
+Host dby50
+    HostName 192.168.7.105
+    Port 22
+    User root
+Host mac
+    HostName 192.168.7.105
+    Port 22
+    User root
+Host slurm
+    HostName 192.168.7.148
+    Port 22
+    User root
+Host localk8s
+    HostName 10.0.101.101
+    Port 22
+    User root
+Host wxr
+    #HostName 192.168.7.112
+    #Port 22
+    HostName 210.45.123.248
+    Port 52222
+    User root
+Host Test
+    HostName 10.0.101.11
+    Port 22
+    User root
+    ProxyCommand ssh wxr -W %h:%p
+Host Dev
+    HostName 10.0.102.11
+    Port 22
+    User root
+    ProxyCommand ssh wxr -W %h:%p
